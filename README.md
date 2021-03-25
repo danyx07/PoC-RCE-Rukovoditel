@@ -12,7 +12,7 @@ exploit.py -t <target> -a L --ip attacker IP --port attacker port [options]
 exploit.py -t <target> -a C -u <username> -p <password> --ip attacker IP --port attacker port [options]
 
 Post-authenticate RCE for rukovoditel, script version 1.0
-  
+
 optional arguments:
 -h, --help            show this help message and exit
 -t URL, --target URL  URL/Full path to CMS Rukovoditel http://url/path/to/cms/
