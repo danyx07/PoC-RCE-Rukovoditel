@@ -1,6 +1,6 @@
 # PoC-RCE-Rukovoditel
-Proof of concept for CVE-2020-11819 and CVE-2020-15946
-
+Proof of concept for CVE-2020-11819 and CVE-2020-15946. Tested on Rukovoditel 2.4.x, 2.5.x and 2.6.1
+ 
 # Description:
 This exploit has two modes of execution, using the session fixation vulnerability (CVE-2020-15946) or using the access credentials of any account under any profile. 
 With the --type L option, this script will create a malicious link, if the link is accessed in a browser by the victim, an arbitrary session identifier will be set that will be used to steal their session after uploading an image with PHP content on their photo profile, and then use local file include (CVE-2020-11819) to get a nice reverse shell or, with the options --type C -u <username> -p <password> you can provide credentials, load the image with PHP content and use local file inclusion (CVE-2020-11819) to achieve the execution of code. 
